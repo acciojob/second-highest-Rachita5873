@@ -10,14 +10,14 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-				let num = arr.sort(function(a, b){return a - b});
+			 arr.sort(function(a, b){return a - b});
 	
-	if(num.length===0 || num.length===1 || num[0]===num[num.length-1]){
-		return "-Infinity"
+	if(arr.length===0 || arr.length===1 || arr[0]===arr[arr.length-1]){
+		return -Infinity; 
 	}
 		
 	else{
-		return num[num.length-2];
+		 return arr[arr.length-2];
 	}
 		}
 
